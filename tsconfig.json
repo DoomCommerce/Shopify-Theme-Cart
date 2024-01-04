@@ -17,10 +17,10 @@
         "composite" : true ,
         "pretty" : true ,
 
-        "moduleResolution" : "node" ,
+        "moduleResolution" : "NodeNext" ,
         "baseUrl" : "Source" ,
         "rootDir" : "." ,
-        "module" : "commonjs" ,
+        "module" : "NodeNext" ,
         "target" : "ESNext" ,
         "outDir" : "Build" ,
 
