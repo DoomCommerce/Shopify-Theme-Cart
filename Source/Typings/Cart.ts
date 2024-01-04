@@ -1,11 +1,11 @@
 
 export type { CartBase , Cart }
 
-import { DiscountApplication , WithSections , Currencies , Item } from './mod'
+import { DiscountApplication , WithRendered , Currencies , Item } from './mod'
 
 
 type Cart = 
-    & WithSections
+    & WithRendered
     & CartBase
 
 
