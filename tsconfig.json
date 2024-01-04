@@ -12,7 +12,6 @@
         "importHelpers" : true ,
         "noImplicitAny" : true ,
         "skipLibCheck" : true ,
-        "declaration" : true ,
         "sourceMap" : true ,
         "composite" : true ,
         "pretty" : true ,
