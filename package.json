@@ -1,6 +1,6 @@
 {
     "name": "@doomcommerce/shopify-theme-cart",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "Shopify theme cart API typings & wrappers",
     
     "scripts": {
