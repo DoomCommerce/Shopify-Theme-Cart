@@ -1,16 +1,16 @@
 
 export { request }
 
+import { WithRendered , Cart } from './mod'
 import { withJSON } from './Requests'
-import { Cart } from './mod'
 
 
 const toJSON = ( response : Response ) => response.json()
 
 
-async function request ( 
+async function request < Data extends FormData | object > ( 
     request : Request , 
-    data ?: FormData | object 
+    data ?: Data 
 ){
 
     if( data ){
@@ -28,5 +28,5 @@ async function request (
 
     return await fetch(request)
         .then(toJSON)
-        .then(( data ) => data as Cart )
+        .then(( data ) => data as WithRendered & Cart )
 }

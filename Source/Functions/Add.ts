@@ -2,7 +2,9 @@
 export type { AddProps , AddItem }
 export { add }
 
+import { WithSections } from '../mod'
 import { request } from '../Request'
+import { Form } from '../Typings/Internal'
 import { Add } from '../Requests'
 
 
@@ -14,13 +16,11 @@ interface AddItem {
 }
 
 
-interface AddProps {
-    section_url ?: string
-    sections ?: Array<string>
+type AddProps = WithSections & {
     items : Array<AddItem>
 }
 
 
-async function add ( props : FormData | AddProps ){
+async function add ( props : Form | AddProps ){
     return await request(Add,props)
 }

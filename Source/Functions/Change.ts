@@ -2,9 +2,10 @@
 export type { ChangeProps }
 export { change }
 
+import { OneOf , Form } from '../Typings/Internal'
+import { WithSections } from '../mod'
 import { request } from '../Request'
 import { Change } from '../Requests'
-import { OneOf } from '../Typings/Internal'
 
 
 type Identifier = {
@@ -20,8 +21,8 @@ type Options = OneOf<{
 }>
 
 
-type ChangeProps = Identifier & Options
+type ChangeProps = Identifier & Options & WithSections
 
-async function change ( props : FormData | ChangeProps ){
+async function change ( props : Form | ChangeProps ){
     return await request(Change,props)
 }

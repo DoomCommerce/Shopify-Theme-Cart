@@ -1,5 +1,13 @@
 
-export { OneOf }
+export { OneOf , Form }
+
+
+type Form = Omit<FormData,
+    | 'append' | 'delete' | 'get' 
+    | 'getAll' | 'has' | 'set' 
+    | 'forEach' | 'entries' 
+    | 'keys' | 'values'>
+
 
 
 /**
