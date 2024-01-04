@@ -1,9 +1,7 @@
 
-<div align = center >
-
-[![Badge NPM]][NPM]
-
 <br>
+
+<div align = center >
 
 # Shopify Theme Cart <br> API Wrapper
 
@@ -19,9 +17,18 @@ Wrapper functions & typings
 [![Button Usage]][Usage]  
 [![Button Examples]][Examples]
 
+
+<br>
+
+```sh
+npm install @doomcommerce/shopify-theme-cart
+```
+
 </div>
 
 <br>
+
+## Showcase
 
 ```ts
 import Cart from '@doomcommerce/shopify-theme-cart'
@@ -34,13 +41,9 @@ cart = await Cart.change({
 })
 ```
 
-
 <br>
 
 <!----------------------------------------------------------------------------->
-
-[Badge NPM]: https://img.shields.io/npm/v/%40doomcommerce%2Fshopify-theme-cart?style=for-the-badge&logoColor=white&logo=NPM&labelColor=cb0000&color=950000
-[NPM]: https://www.npmjs.com/package/@doomcommerce/shopify-theme-cart
 
 [Button Installation]: https://img.shields.io/badge/Installation-539c3f?style=for-the-badge&logoColor=white&logo=docusign
 [Button Examples]: https://img.shields.io/badge/Examples-14539a?style=for-the-badge&logoColor=white&logo=apacheparquet

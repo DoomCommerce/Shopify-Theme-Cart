@@ -1,0 +1,52 @@
+{
+    "name": "@doomcommerce/shopify-theme-cart",
+    "version": "1.0.0",
+    "description": "Shopify theme cart API typings & wrappers",
+    
+    "scripts": {
+        "build": "tsc",
+        "dev": "bun --watch Test/mod.ts"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DoomCommerce/Shopify-Theme-Cart.git"
+    },
+    "bugs": {
+        "url": "https://github.com/DoomCommerce/Shopify-Theme-Cart/issues"
+    },
+    "homepage": "https://github.com/DoomCommerce/Shopify-Theme-Cart",
+    "author": "DoomCommerce",
+    "license": "AGPLv3",
+    "keywords": [
+        "shopify",
+        "theme",
+        "cart",
+        "api",
+        "wrapper" ,
+        "typings"
+    ],
+    "files": [
+        "**/*.d.ts",
+        "**/*.d.ts.map",
+        "**/*.js",
+        "**/*.js.map",
+        "!node_modules"
+    ],
+    "devDependencies": {
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "tslib": "^2.6.2"
+    },
+    "main": "./Build/Source/mod.js",
+    "types": "./Build/Source/mod.d.ts",
+    "exports": {
+        ".": {
+            "types": "./Build/Source/mod.d.ts",
+            "default": "./Build/Source/mod.js"
+        }
+    }
+}

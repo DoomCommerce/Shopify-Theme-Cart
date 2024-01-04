@@ -1,0 +1,67 @@
+
+name : 'Publish to NPM & GitHub'
+
+on:
+    release:
+      types : [ created ]
+
+jobs:
+    npm:
+
+        runs-on: ubuntu-latest
+
+        steps:
+
+            -   name : Checkout Repository
+                uses : actions/checkout@v3
+
+
+            -   name : Install Bun
+                uses : oven-sh/setup-bun@v1
+
+
+            -   name : Install Dependencies
+                run : bun install
+
+
+            -   name : Build Project
+                run : bun run build
+
+
+            -   name : Replace with NPM README
+                run : |
+
+                    rm README.md
+                    cp Documentation/NPM.md README.md
+
+
+                #
+                #   Publish to 𝗡𝗣𝗠
+                #
+
+            -   name : Setup NPM Registry
+                uses : actions/setup-node@v3
+                with :
+                    node-version : '21.x'
+                    registry-url : 'https://registry.npmjs.org'
+
+            -   name : Publish to NPM
+                if : contains(github.ref, 'tags')
+                run : npm publish --access=public
+                env :
+                    NODE_AUTH_TOKEN : ${{ secrets.NPM_Token }}
+
+
+                #
+                #   Publish to 𝗚𝗶𝘁𝗛𝘂𝗯
+                #
+
+            -   name : Setup GitHub Registry
+                uses : actions/setup-node@v3
+                with :
+                    registry-url : 'https://npm.pkg.github.com'
+
+            -   name : Publish to GitHub
+                run : npm publish
+                env :
+                    NODE_AUTH_TOKEN: ${{ github.token }}
