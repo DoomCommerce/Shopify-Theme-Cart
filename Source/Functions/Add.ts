@@ -1,5 +1,5 @@
 
-export type { AddItem }
+export type { AddProps , AddItem }
 export { add }
 
 import { request } from '../Request'
@@ -13,6 +13,14 @@ interface AddItem {
     id : number
 }
 
-async function add ( items : FormData | Array<AddItem> ){
-    return await request(Add,{ items })
+
+interface AddProps {
+    section_url ?: string
+    sections ?: Array<string>
+    items : Array<AddItem>
+}
+
+
+async function add ( props : FormData | AddProps ){
+    return await request(Add,props)
 }
