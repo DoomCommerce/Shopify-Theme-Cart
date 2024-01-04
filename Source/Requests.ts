@@ -7,7 +7,7 @@ const { root } = window.Shopify.routes
 
 const withJSON = {
     headers : {
-        'Content-Type' : 'application/json'
+        'Content-Type' : 'application/json' as const
     }
 }
 
@@ -15,7 +15,7 @@ const asPost = { method : 'POST' }
 
 
 const Query = new Request
-    ( root + `cart.js` , asPost )
+    ( root + `cart.js` )
 
 const Clear = new Request
     ( root + `cart/clear.js` , asPost )

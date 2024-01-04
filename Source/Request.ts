@@ -20,7 +20,7 @@ async function request < Data extends FormData | object > (
         const body = ( isForm )
             ? data : JSON.stringify(data)
 
-        if( isForm )
+        if( ! isForm )
             request = new Request(request,withJSON)
 
         request = new Request(request,{ body })
