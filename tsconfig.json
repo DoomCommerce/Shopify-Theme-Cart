@@ -1,6 +1,7 @@
 {
     "compilerOptions" : {
 
+        "allowImportingTsExtensions" : true ,
         "experimentalDecorators" : true ,
         "downlevelIteration" : true ,
         "resolveJsonModule" : true ,
@@ -12,15 +13,17 @@
         "importHelpers" : true ,
         "noImplicitAny" : true ,
         "skipLibCheck" : true ,
+        "declaration": true ,
         "sourceMap" : true ,
         "composite" : true ,
         "pretty" : true ,
+        "noEmit" : true ,
 
         "moduleResolution" : "NodeNext" ,
         "baseUrl" : "Source" ,
         "rootDir" : "." ,
         "module" : "NodeNext" ,
-        "target" : "ESNext" ,
+        "target" : "ES2020" ,
         "outDir" : "Build" ,
 
         "typeRoots" : [ "node_modules/@types" ] ,

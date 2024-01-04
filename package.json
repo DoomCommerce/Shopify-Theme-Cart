@@ -1,10 +1,10 @@
 {
     "name": "@doomcommerce/shopify-theme-cart",
-    "version": "1.2.4",
+    "version": "1.3.0",
     "description": "Shopify theme cart API typings & wrappers",
+    "type" : "module",
     
     "scripts": {
-        "build": "tsc",
         "dev": "bun --watch Test/mod.ts"
     },
     "publishConfig": {
@@ -29,10 +29,7 @@
         "typings"
     ],
     "files": [
-        "Build/**/*.d.ts",
-        "Build/**/*.d.ts.map",
-        "Build/**/*.js",
-        "Build/**/*.js.map",
+        "Source/**/*.ts",
         "!node_modules"
     ],
     "devDependencies": {
@@ -41,12 +38,5 @@
     "dependencies": {
         "tslib": "^2.6.2"
     },
-    "main": "./Build/Source/mod.js",
-    "types": "./Build/Source/mod.d.ts",
-    "exports": {
-        ".": {
-            "types": "./Build/Source/mod.d.ts",
-            "default": "./Build/Source/mod.js"
-        }
-    }
+    "modules": "./Source/mod."
 }

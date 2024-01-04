@@ -2,10 +2,10 @@
 export type { UpdateProps }
 export { update }
 
-import { OneOf , Form } from '../Typings/Internal'
-import { WithSections } from '../mod'
-import { request } from '../Request'
-import { Update } from '../Requests'
+import { OneOf , Form } from '../Typings/Internal.ts'
+import { WithSections } from '../mod.ts'
+import { request } from '../Request.ts'
+import { Update } from '../Requests.ts'
 
 
 type UpdateProps = WithSections & OneOf<{

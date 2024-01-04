@@ -1,9 +1,9 @@
 
 export { clear }
 
-import { WithSections } from '../mod'
-import { request } from '../Request'
-import { Clear } from '../Requests'
+import { WithSections } from '../mod.ts'
+import { request } from '../Request.ts'
+import { Clear } from '../Requests.ts'
 
 
 type ClearProps = {} | WithSections

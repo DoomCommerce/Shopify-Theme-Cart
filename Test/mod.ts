@@ -1,3 +1,3 @@
 
-import {} from '../Source/mod'
+import {} from '../Source/mod.ts'
 

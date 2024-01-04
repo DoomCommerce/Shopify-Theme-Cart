@@ -1,7 +1,7 @@
 
 export type { CartBase , Cart }
 
-import { DiscountApplication , WithRendered , Currencies , Item } from './mod'
+import { DiscountApplication , WithRendered , Currencies , Item } from './mod.ts'
 
 
 type Cart = 

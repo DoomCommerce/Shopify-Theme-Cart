@@ -2,10 +2,10 @@
 export type { AddProps , AddItem }
 export { add }
 
-import { WithSections } from '../mod'
-import { request } from '../Request'
-import { Form } from '../Typings/Internal'
-import { Add } from '../Requests'
+import { WithSections } from '../mod.ts'
+import { request } from '../Request.ts'
+import { Form } from '../Typings/Internal.ts'
+import { Add } from '../Requests.ts'
 
 
 interface AddItem {

@@ -4,7 +4,7 @@ export type { Item }
 import { 
     DiscountAllocation , QuantityRule , 
     WithThumbnail , WithUnitPrice , Discount 
-} from './mod'
+} from './mod.ts'
 
 
 type Item = 

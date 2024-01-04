@@ -1,8 +1,8 @@
 
-export * from './Functions/mod'
-export * from './Typings/mod'
+export * from './Functions/mod.ts'
+export * from './Typings/mod.ts'
 
 
-import { update , change , query , clear , add } from './Functions/mod'
+import { update , change , query , clear , add } from './Functions/mod.ts'
 
 export default { update , change , query , clear , add }

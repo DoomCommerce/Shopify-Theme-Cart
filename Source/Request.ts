@@ -1,8 +1,8 @@
 
 export { request }
 
-import { withJSON } from './Requests'
-import { Cart } from './mod'
+import { withJSON } from './Requests.ts'
+import { Cart } from './mod.ts'
 
 
 const toJSON = ( response : Response ) => response.json()

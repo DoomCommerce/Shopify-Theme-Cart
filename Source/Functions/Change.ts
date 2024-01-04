@@ -2,10 +2,10 @@
 export type { ChangeProps }
 export { change }
 
-import { OneOf , Form } from '../Typings/Internal'
-import { WithSections } from '../mod'
-import { request } from '../Request'
-import { Change } from '../Requests'
+import { OneOf , Form } from '../Typings/Internal.ts'
+import { WithSections } from '../mod.ts'
+import { request } from '../Request.ts'
+import { Change } from '../Requests.ts'
 
 
 type Identifier = {

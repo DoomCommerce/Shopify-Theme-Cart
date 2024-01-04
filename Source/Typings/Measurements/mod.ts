@@ -1,15 +1,15 @@
 
 export { UnitMeasurement }
 
-export * from './Volume'
-export * from './Weight'
-export * from './Size'
-export * from './Area'
+export * from './Volume.ts'
+export * from './Weight.ts'
+export * from './Size.ts'
+export * from './Area.ts'
 
-import { VolumeMeasurement } from './Volume'
-import { WeightMeasurement } from './Weight'
-import { SizeMeasurement } from './Size'
-import { AreaMeasurement } from './Area'
+import { VolumeMeasurement } from './Volume.ts'
+import { WeightMeasurement } from './Weight.ts'
+import { SizeMeasurement } from './Size.ts'
+import { AreaMeasurement } from './Area.ts'
 
 
 type UnitMeasurement = 

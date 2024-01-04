@@ -1,8 +1,8 @@
 
 export { query }
 
-import { request } from '../Request'
-import { Query } from '../Requests'
+import { request } from '../Request.ts'
+import { Query } from '../Requests.ts'
 
 
 async function query (){

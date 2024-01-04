@@ -1,7 +1,7 @@
 
 export type { UnitPriceMeasurement , WithUnitPrice }
 
-import { UnitMeasurement } from './mod'
+import { UnitMeasurement } from './mod.ts'
 
 
 type WithUnitPrice = {} | {

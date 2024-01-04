@@ -1,6 +1,6 @@
 
-export * from './Update'
-export * from './Change'
-export * from './Clear'
-export * from './Query'
-export * from './Add'
+export * from './Update.ts'
+export * from './Change.ts'
+export * from './Clear.ts'
+export * from './Query.ts'
+export * from './Add.ts'
