@@ -1,9 +1,15 @@
 
-export { Cart }
+export type { CartBase , Cart }
 
-import { DiscountApplication , Currencies , Item } from './mod'
+import { DiscountApplication , WithSections , Currencies , Item } from './mod'
 
-interface Cart {
+
+type Cart = 
+    & WithSections
+    & CartBase
+
+
+interface CartBase {
 
     cart_level_discount_applications : Array<DiscountApplication>
 
