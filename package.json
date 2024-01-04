@@ -29,10 +29,10 @@
         "typings"
     ],
     "files": [
-        "**/*.d.ts",
-        "**/*.d.ts.map",
-        "**/*.js",
-        "**/*.js.map",
+        "Build/**/*.d.ts",
+        "Build/**/*.d.ts.map",
+        "Build/**/*.js",
+        "Build/**/*.js.map",
         "!node_modules"
     ],
     "devDependencies": {
